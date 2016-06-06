@@ -45,13 +45,19 @@ public class RuleValidator
 	 * @return
 	 */
 	public boolean nquRuleValidate(String chunk, String stem) {
-		return false;
+		if (chunk.length( ) != 3) {
+			throw new InvalidParameterException("Chunk must be 3 chars long");
+		}
+		
+		// Check characters one by one.
+		return (this.isConsonant( chunk.charAt( 0 ) ) && chunk.charAt( 1 ) == 'q' && chunk.charAt( 2 ) == 'u');
 	}
 	
 	public boolean thrRuleValidate(String chunk, String stem) {
 		if (chunk.length( ) != 3) {
 			throw new InvalidParameterException("Chunk must be 3 chars long");
 		}
+		
 		return chunk.equals( "thr" );
 	}
 	
@@ -59,6 +65,7 @@ public class RuleValidator
 		if (chunk.length( ) != 3) {
 			throw new InvalidParameterException("Chunk must be 3 chars long");
 		}
+		
 		return chunk.equals( "sch" );
 	}
 	
@@ -66,6 +73,7 @@ public class RuleValidator
 		if (chunk.length( ) != 2) {
 			throw new InvalidParameterException("Chunk must be 2 chars long");
 		}
+		
 		return chunk.equals( "qu" );
 	}
 	
@@ -73,6 +81,7 @@ public class RuleValidator
 		if (chunk.length( ) != 2) {
 			throw new InvalidParameterException("Chunk must be 2 chars long");
 		}
+		
 		return chunk.equals( "th" );
 	}
 	
@@ -80,6 +89,7 @@ public class RuleValidator
 		if (chunk.length( ) != 2) {
 			throw new InvalidParameterException("Chunk must be 2 chars long");
 		}
+		
 		return chunk.equals( "ch" );
 	}
 	
@@ -89,6 +99,7 @@ public class RuleValidator
 		if (chunk.length( ) != 2) {
 			throw new InvalidParameterException("Chunk must be 2 chars long");
 		}
+		
 		return chunk.equals( "yt" );
 	}
 	
@@ -96,6 +107,7 @@ public class RuleValidator
 		if (chunk.length( ) != 2) {
 			throw new InvalidParameterException("Chunk must be 2 chars long");
 		}
+		
 		return chunk.equals( "xr" );
 	}
 }
