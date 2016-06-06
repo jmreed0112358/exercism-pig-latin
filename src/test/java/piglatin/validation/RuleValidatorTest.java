@@ -51,4 +51,124 @@ public class RuleValidatorTest
 			assertFalse(this.ruleValidator.isConsonant( vowels[i] ));
 		}
 	}
+	
+	@Test
+	public void test_nquRule_ValidChunk_ReturnsTrue() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_nquRule_InvalidChunk_ReturnsFalse() {
+		fail("Not yet implemented");
+	}
+	
+	@Test 
+	public void test_nquRule_NullChunk_ThrowsException() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_thrRule_ValidChunk_ReturnsTrue() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_thrRule_InvalidChunk_ReturnsFalse() {
+		fail("Not yet implemented");
+	}
+	
+	@Test 
+	public void test_thrRule_NullChunk_ThrowsException() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_schRule_ValidChunk_ReturnsTrue() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_schRule_InvalidChunk_ReturnsFalse() {
+		fail("Not yet implemented");
+	}
+	
+	@Test 
+	public void test_schRule_NullChunk_ThrowsException() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_quRule_ValidChunk_ReturnsTrue() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_quRule_InvalidChunk_ReturnsFalse() {
+		fail("Not yet implemented");
+	}
+	
+	@Test 
+	public void test_quRule_NullChunk_ThrowsException() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_thRule_ValidChunk_ReturnsTrue() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_thRule_InvalidChunk_ReturnsFalse() {
+		fail("Not yet implemented");
+	}
+	
+	@Test 
+	public void test_thRule_NullChunk_ThrowsException() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_chRule_ValidChunk_ReturnsTrue() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_chRule_InvalidChunk_ReturnsFalse() {
+		fail("Not yet implemented");
+	}
+	
+	@Test 
+	public void test_chRule_NullChunk_ThrowsException() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_ytRule_ValidChunk_ReturnsTrue() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_ytRule_InvalidChunk_ReturnsFalse() {
+		fail("Not yet implemented");
+	}
+	
+	@Test 
+	public void test_ytRule_NullChunk_ThrowsException() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_singleCharChunkRule_ValidChunk_ReturnsTrue() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_singleCharChunkRule_InvalidChunk_ReturnsFalse() {
+		fail("Not yet implemented");
+	}
+	
+	@Test 
+	public void test_singleCharChunkRule_NullChunk_ThrowsException() {
+		fail("Not yet implemented");
+	}
 }
