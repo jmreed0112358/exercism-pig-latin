@@ -49,38 +49,53 @@ public class RuleValidator
 	}
 	
 	public boolean thrRuleValidate(String chunk, String stem) {
-		return false;
+		if (chunk.length( ) != 3) {
+			throw new InvalidParameterException("Chunk must be 3 chars long");
+		}
+		return chunk.equals( "thr" );
 	}
 	
 	public boolean schRuleValidate(String chunk, String stem) {
-		return false;
+		if (chunk.length( ) != 3) {
+			throw new InvalidParameterException("Chunk must be 3 chars long");
+		}
+		return chunk.equals( "sch" );
 	}
 	
 	public boolean quRuleValidate(String chunk, String stem) {
-		return false;
+		if (chunk.length( ) != 2) {
+			throw new InvalidParameterException("Chunk must be 2 chars long");
+		}
+		return chunk.equals( "qu" );
 	}
 	
 	public boolean thRuleValidate(String chunk, String stem) {
-		return false;
+		if (chunk.length( ) != 2) {
+			throw new InvalidParameterException("Chunk must be 2 chars long");
+		}
+		return chunk.equals( "th" );
 	}
 	
 	public boolean chRuleValidate(String chunk, String stem) {
-		return false;
+		if (chunk.length( ) != 2) {
+			throw new InvalidParameterException("Chunk must be 2 chars long");
+		}
+		return chunk.equals( "ch" );
 	}
 	
 	// Vowel rules.
 	
 	public boolean ytRuleValidate(String chunk, String stem) {
-		return false;
+		if (chunk.length( ) != 2) {
+			throw new InvalidParameterException("Chunk must be 2 chars long");
+		}
+		return chunk.equals( "yt" );
 	}
 	
 	public boolean xrRuleValidate(String chunk, String stem) {
-		return false;
-	}
-	
-	// Could be either consonant or vowel rule.
-	
-	public boolean SingleCharChunkValidate(String chunk, String stem) {
-		return false;
+		if (chunk.length( ) != 2) {
+			throw new InvalidParameterException("Chunk must be 2 chars long");
+		}
+		return chunk.equals( "xr" );
 	}
 }
