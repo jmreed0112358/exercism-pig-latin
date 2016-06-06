@@ -75,6 +75,19 @@ public class RuleValidatorTest
 		}
 	}
 	
+	@Test
+	public void test_nquRule_ShortChunk_ThrowsException() {
+		this.ruleValidator = new RuleValidator();
+		try {
+			this.ruleValidator.nquRuleValidate( "t", "foo" );
+			fail("Should have caught InvalidParameterException");
+		} catch (InvalidParameterException ipe) {
+			
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
+	}
+	
 	@Test 
 	public void test_nquRule_NullChunk_ThrowsException() {
 		this.ruleValidator = new RuleValidator();
@@ -83,7 +96,9 @@ public class RuleValidatorTest
 			fail("Should have caught NullPointerException");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test
@@ -106,7 +121,9 @@ public class RuleValidatorTest
 			fail("Should have caught InvalidParameterException");
 		} catch (InvalidParameterException ipe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test 
@@ -117,7 +134,9 @@ public class RuleValidatorTest
 			fail("Should have caught NullPointerException");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test
@@ -132,6 +151,19 @@ public class RuleValidatorTest
 		assertFalse(this.ruleValidator.schRuleValidate( "zoi", "ow" ));
 	}
 	
+	@Test
+	public void test_schRule_ShortChunk_ThrowsException() {
+		this.ruleValidator = new RuleValidator();
+		try {
+			this.ruleValidator.schRuleValidate( "t", "foo" );
+			fail("Should have caught InvalidParameterException");
+		} catch (InvalidParameterException ipe) {
+			
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
+	}
+	
 	@Test 
 	public void test_schRule_NullChunk_ThrowsException() {
 		this.ruleValidator = new RuleValidator();
@@ -140,7 +172,9 @@ public class RuleValidatorTest
 			fail("Should have caught NullPointerException");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test
@@ -155,6 +189,19 @@ public class RuleValidatorTest
 		assertFalse(this.ruleValidator.quRuleValidate( "zo", "ow" ));
 	}
 	
+	@Test
+	public void test_quRule_ShortChunk_ThrowsException() {
+		this.ruleValidator = new RuleValidator();
+		try {
+			this.ruleValidator.quRuleValidate( "t", "foo" );
+			fail("Should have caught InvalidParameterException");
+		} catch (InvalidParameterException ipe) {
+			
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
+	}
+	
 	@Test 
 	public void test_quRule_NullChunk_ThrowsException() {
 		this.ruleValidator = new RuleValidator();
@@ -163,7 +210,9 @@ public class RuleValidatorTest
 			fail("Should have caught NullPointerException");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test
@@ -178,6 +227,19 @@ public class RuleValidatorTest
 		assertFalse(this.ruleValidator.thRuleValidate( "zo", "ow" ));
 	}
 	
+	@Test
+	public void test_thRule_ShortChunk_ThrowsException() {
+		this.ruleValidator = new RuleValidator();
+		try {
+			this.ruleValidator.thRuleValidate( "t", "foo" );
+			fail("Should have caught InvalidParameterException");
+		} catch (InvalidParameterException ipe) {
+			
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
+	}
+	
 	@Test 
 	public void test_thRule_NullChunk_ThrowsException() {
 		this.ruleValidator = new RuleValidator();
@@ -186,7 +248,9 @@ public class RuleValidatorTest
 			fail("Should have caught NullPointerException");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test
@@ -201,6 +265,19 @@ public class RuleValidatorTest
 		assertFalse(this.ruleValidator.chRuleValidate( "zo", "ow" ));
 	}
 	
+	@Test
+	public void test_chRule_ShortChunk_ThrowsException() {
+		this.ruleValidator = new RuleValidator();
+		try {
+			this.ruleValidator.chRuleValidate( "t", "foo" );
+			fail("Should have caught InvalidParameterException");
+		} catch (InvalidParameterException ipe) {
+			
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
+	}
+	
 	@Test 
 	public void test_chRule_NullChunk_ThrowsException() {
 		this.ruleValidator = new RuleValidator();
@@ -209,7 +286,9 @@ public class RuleValidatorTest
 			fail("Should have caught NullPointerException");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test
@@ -224,6 +303,19 @@ public class RuleValidatorTest
 		assertFalse(this.ruleValidator.ytRuleValidate( "zo", "ow" ));
 	}
 	
+	@Test
+	public void test_ytRule_ShortChunk_ThrowsException() {
+		this.ruleValidator = new RuleValidator();
+		try {
+			this.ruleValidator.ytRuleValidate( "t", "foo" );
+			fail("Should have caught InvalidParameterException");
+		} catch (InvalidParameterException ipe) {
+			
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
+	}
+	
 	@Test 
 	public void test_ytRule_NullChunk_ThrowsException() {
 		this.ruleValidator = new RuleValidator();
@@ -232,7 +324,9 @@ public class RuleValidatorTest
 			fail("Should have caught NullPointerException");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test
@@ -247,6 +341,19 @@ public class RuleValidatorTest
 		assertFalse(this.ruleValidator.xrRuleValidate( "zo", "ow" ));
 	}
 	
+	@Test
+	public void test_xrRule_ShortChunk_ThrowsException() {
+		this.ruleValidator = new RuleValidator();
+		try {
+			this.ruleValidator.xrRuleValidate( "t", "foo" );
+			fail("Should have caught InvalidParameterException");
+		} catch (InvalidParameterException ipe) {
+			
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
+	}
+	
 	@Test 
 	public void test_xrRule_NullChunk_ThrowsException() {
 		this.ruleValidator = new RuleValidator();
@@ -255,6 +362,8 @@ public class RuleValidatorTest
 			fail("Should have caught NullPointerException");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 }

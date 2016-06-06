@@ -45,7 +45,9 @@ public class RuleExecutorTest
 			fail("Should have caught a null pointer exception.");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test
@@ -58,7 +60,9 @@ public class RuleExecutorTest
 			fail("Should have caught a null pointer exception.");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test
@@ -91,7 +95,9 @@ public class RuleExecutorTest
 			fail("Should have caught a null pointer exception.");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 	
 	@Test
@@ -104,6 +110,8 @@ public class RuleExecutorTest
 			fail("Should have caught a null pointer exception.");
 		} catch (NullPointerException npe) {
 			
-		}
+		} catch (Exception e) {
+    		fail("Didn't catch the correct exception!");
+    	}
 	}
 }
