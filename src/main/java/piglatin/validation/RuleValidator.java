@@ -17,6 +17,11 @@ public class RuleValidator
 	 * @return boolean 
 	 */
 	public boolean isVowel(char chunk){
+		for (int i = 0 ; i < vowels.length ; i++ ) {
+			if (chunk == vowels[i]) {
+				return true;
+			}
+		}
 		return false;
 	}
 	
@@ -27,7 +32,7 @@ public class RuleValidator
 	 * @throws InvalidParameterException
 	 */
 	public boolean isConsonant(char chunk) {
-		return false;
+		return !this.isVowel( chunk );
 	}
 	
 	// Consonant rules.
