@@ -9,6 +9,7 @@ public class PigLatin
 	}
 
 	public static String translate(String input) {
+		// Check for null string.
 		// Check for empty string.
 		// Reduce all characters to lower case.
 		// Tokenize string.
