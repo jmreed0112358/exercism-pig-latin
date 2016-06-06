@@ -3,12 +3,9 @@ package piglatin.execution;
 public class RuleExecutor
 {
 	private final String TERMINATOR = "ay";
-	private StringBuilder sb = null;
-	
 	
 	public RuleExecutor( )
 	{
-		this.sb = new StringBuilder();
 	}
 
 	/**
@@ -22,8 +19,9 @@ public class RuleExecutor
 			throw new NullPointerException();
 		}
 		
-		this.sb.append( stem ).append( chunk ).append( TERMINATOR );
-		return this.sb.toString( );
+		StringBuilder sb = new StringBuilder();
+		sb.append( stem ).append( chunk ).append( TERMINATOR );
+		return sb.toString( );
 	}
 	
 	/**
@@ -36,7 +34,9 @@ public class RuleExecutor
 		if ( chunk == null || stem == null) {
 			throw new NullPointerException();
 		}
-		this.sb.append( chunk ).append( stem ).append( TERMINATOR );
-		return this.sb.toString( );
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append( chunk ).append( stem ).append( TERMINATOR );
+		return sb.toString( );
 	}
 }
