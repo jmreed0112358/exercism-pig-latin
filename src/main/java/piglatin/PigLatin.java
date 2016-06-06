@@ -1,3 +1,4 @@
+package piglatin;
 
 public class PigLatin
 {
