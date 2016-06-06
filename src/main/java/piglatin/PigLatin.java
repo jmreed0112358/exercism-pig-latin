@@ -5,10 +5,6 @@ import piglatin.validation.RuleValidator;
 
 public class PigLatin
 {
-	public PigLatin( )
-	{
-	}
-
 	public static String translate(String input) throws NullPointerException {
 		// Check for null string.
 		if (input == null) {

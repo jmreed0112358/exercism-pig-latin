@@ -2,23 +2,27 @@ package piglatin.validation;
 
 import java.security.InvalidParameterException;
 
+/**
+ * Checks chunks for validity against vowel / consonant rules.
+ * Words are broken down into chunks and stems.  
+ * Chunks are 1 - 3 chars in length, are are checked against the vowel/consonant rules.
+ * Stems are whatever chars that come after the chunk.  They can be 0 - n chars in length.
+ * @author jmreed
+ *
+ */
 public class RuleValidator
 {
 	// Only need vowels, if a letter isn't here, it's a consonant.
 	private char[] vowels = {'a', 'e', 'i', 'o', 'u'};
-
-	public RuleValidator( )
-	{
-	}
 
 	/**
 	 * Valid for single char chunks only.
 	 * @param chunk The character to check.
 	 * @return boolean 
 	 */
-	public boolean isVowel(char chunk){
+	public boolean isVowel(char letter){
 		for (int i = 0 ; i < vowels.length ; i++ ) {
-			if (chunk == vowels[i]) {
+			if (letter == vowels[i]) {
 				return true;
 			}
 		}
@@ -31,15 +35,14 @@ public class RuleValidator
 	 * @return boolean
 	 * @throws InvalidParameterException
 	 */
-	public boolean isConsonant(char chunk) {
-		return !this.isVowel( chunk );
+	public boolean isConsonant(char letter) {
+		return !this.isVowel( letter );
 	}
 	
 	// Consonant rules.
 	
 	/**
-	 * Validates nqu rule.
-	 * Note: n must be a consonant.
+	 * nqu rule, where n represents any consonant.
 	 * @param chunk
 	 * @param stem
 	 * @return

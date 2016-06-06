@@ -1,12 +1,15 @@
 package piglatin.execution;
 
+/**
+ * Words are broken down into chunks and stems.  
+ * Chunks are 1 - 3 chars in length, are are checked against the vowel/consonant rules.
+ * Stems are whatever chars that come after the chunk.  They can be 0 - n chars in length.
+ * @author jmreed
+ *
+ */
 public class RuleExecutor
 {
 	private final String TERMINATOR = "ay";
-	
-	public RuleExecutor( )
-	{
-	}
 
 	/**
 	 * Executes consonant rule on the given chunk and stem.
