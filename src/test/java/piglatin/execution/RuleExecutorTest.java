@@ -23,7 +23,7 @@ public class RuleExecutorTest
 		String expected = "owthray";
 		
 		String actual = this.ruleExecutor.consonantRuleExecute( chunk, stem );
-		assertEquals(expected, actual, "Didn't get expected result.");
+		assertTrue(expected.equals( actual ));
 	}
 	
 	@Test
@@ -33,7 +33,7 @@ public class RuleExecutorTest
 		String expected = "thray";
 		
 		String actual = this.ruleExecutor.consonantRuleExecute( chunk, stem );
-		assertEquals(expected, actual, "Didn't get expected result.");
+		assertTrue(expected.equals( actual ));
 	}
 	
 	@Test
@@ -64,22 +64,22 @@ public class RuleExecutorTest
 	
 	@Test
 	public void test_vowelRuleExecute_ThreeCharChunk_NonEmptyStem_ValidResult() {
-		String chunk = "thr";
+		String chunk = "onu";
 		String stem = "ow";
-		String expected = "owthray";
+		String expected = "onuoway";
 		
-		String actual = this.ruleExecutor.consonantRuleExecute( chunk, stem );
-		assertEquals(expected, actual, "Didn't get expected result.");
+		String actual = this.ruleExecutor.vowelRuleExecute( chunk, stem );
+		assertTrue(expected.equals( actual ));
 	}
 	
 	@Test
 	public void test_vowelRuleExecute_ThreeCharChunk_EmptyStem_ValidResult() {
-		String chunk = "thr";
+		String chunk = "onu";
 		String stem = "";
-		String expected = "thray";
+		String expected = "onuay";
 		
-		String actual = this.ruleExecutor.consonantRuleExecute( chunk, stem );
-		assertEquals(expected, actual, "Didn't get expected result.");
+		String actual = this.ruleExecutor.vowelRuleExecute( chunk, stem );
+		assertTrue(expected.equals( actual ));
 	}
 	
 	@Test
@@ -88,7 +88,7 @@ public class RuleExecutorTest
 		String stem = "ow";
 		
 		try {
-			this.ruleExecutor.consonantRuleExecute( chunk, stem );
+			this.ruleExecutor.vowelRuleExecute( chunk, stem );
 			fail("Should have caught a null pointer exception.");
 		} catch (NullPointerException npe) {
 			
@@ -97,11 +97,11 @@ public class RuleExecutorTest
 	
 	@Test
 	public void test_vowelRuleExecute_ThreeChunk_NullStem_ValidResult() {
-		String chunk = "thr";
+		String chunk = "onu";
 		String stem = null;
 		
 		try {
-			this.ruleExecutor.consonantRuleExecute( chunk, stem );
+			this.ruleExecutor.vowelRuleExecute( chunk, stem );
 			fail("Should have caught a null pointer exception.");
 		} catch (NullPointerException npe) {
 			
